@@ -22,7 +22,10 @@ module SampleApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    # For testing
-    config.web_console.development_only = false
+
+    # For test
+    unless Rails.env.production?
+      config.web_console.development_only = false
+    end
   end
 end
