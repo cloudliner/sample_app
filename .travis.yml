@@ -1,10 +1,6 @@
 language: ruby
 rvm:
 - 2.2.5
-test:
-  adapter: postgresql
-  database: travis_ci_test
-  username: postgres
 deploy:
   provider: heroku
   api_key:
@@ -14,9 +10,5 @@ deploy:
   app: warm-fortress-30669
   on:
     repo: cloudliner/sample_app
-addons:
-  postgresql: "9.3"
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - cp config/database.yml.travis config/database.yml
   - bin/rake db:migrate RAILS_ENV=test
