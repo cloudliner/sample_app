@@ -10,5 +10,3 @@ deploy:
   app: warm-fortress-30669
   on:
     repo: cloudliner/sample_app
-before_script:
-  - bin/rake db:migrate RAILS_ENV=test
