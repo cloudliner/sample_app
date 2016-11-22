@@ -1,6 +1,6 @@
 require 'simplecov'
 require 'codeclimate-test-reporter'
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+SimpleCov.formatter = [
   SimpleCov::Formatter::HTMLFormatter,
   CodeClimate::TestReporter::Formatter
 ]
