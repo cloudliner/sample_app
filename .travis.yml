@@ -10,3 +10,6 @@ deploy:
   app: cloudliner-sample-app
   on:
     repo: cloudliner/sample_app
+addons:
+  code_climate:
+    repo_token: 26fe0d3cce1c53a5569415885313fb94c2c6db6fd28136bcc1812af8841d383b
