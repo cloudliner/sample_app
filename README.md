@@ -1,6 +1,7 @@
 # Ruby on Railsチュートリアル: サンプルアプリケーション
 
-[warm-fortress](https://warm-fortress-30669.herokuapp.com/)
+- [Heroku](https://cloudliner-sample-app.herokuapp.com/)
+- [TravisCI](https://travis-ci.org/cloudliner/sample_app)
 
 これは以下に基づいたサンプル・アプリケーションです
 [*Ruby on Railsチュートリアル:
