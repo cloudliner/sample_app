@@ -11,6 +11,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                password_confirmation: "bar" }
     end
     assert_template 'users/new'
+    assert_select 'div#error_explanation', /The form contains/
+    assert_select 'div.field_with_errors', 6
   end
 
   test "valid signup information" do
