@@ -5,6 +5,8 @@ ruby '2.3.3'
 gem 'rails', '4.2.7.1'
 gem 'bcrypt'
 gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
