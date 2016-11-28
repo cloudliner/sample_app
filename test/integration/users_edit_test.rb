@@ -19,6 +19,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
 
   test "successfull edit with friendly forwardling" do
     get edit_user_path(@user)
+    assert_redirected_to login_path
     log_in_as(@user)
     assert_redirected_to edit_user_path(@user)
     name = "Foo Bar"
