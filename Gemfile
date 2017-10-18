@@ -5,9 +5,9 @@ ruby '2.3.3'
 gem 'rails', '4.2.7.1'
 gem 'bcrypt'
 gem 'faker'
-gem 'carrierwave', '0.10.0'
-gem 'mini_magick', '3.8.0'
-gem 'fog',         '1.36.0'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
@@ -48,7 +48,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'coveralls', require: false
+  gem 'coveralls', '~> 0.8',require: false
   gem "codeclimate-test-reporter", require: false
 end
 
